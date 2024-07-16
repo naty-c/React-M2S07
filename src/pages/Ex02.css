@@ -1,0 +1,33 @@
+.container-two {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: #7a99f4;
+    margin-top: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.container-two h2 {
+    color: #272643;
+}
+
+.container-two h3, p {
+    color: #f4f47a;
+}
+
+.container-two p {
+    cursor: pointer;
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.container-two p:hover {
+    animation: bounce 1s;
+}
+
+@keyframes bounce {
+    0%, 20%, 60%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-20px);}
+    80% {transform: translateY(-10px);}
+  }

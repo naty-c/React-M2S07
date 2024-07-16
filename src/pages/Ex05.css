@@ -1,0 +1,73 @@
+.container-five {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #7a99f4;
+    border-radius: 8px;
+    color: #272643;
+    align-items: center;
+}
+
+.input-container {
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.form-control-input {
+    padding: 0.5rem 2rem 0.5rem 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #272643;
+    outline: none;
+    color: #556bab;
+    width: 200px;
+    position: relative;
+}
+
+.form-control-input::placeholder {
+    color: #f47a7a;
+}
+
+.form-control-input:focus::placeholder {
+    color: transparent;
+    transition: 0.3s ease-in;
+}
+
+.form-control-input:focus {
+    border-color: #272643;
+    box-shadow: 0 0 5px #272643;
+}
+
+.eye-button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    color: #f47a7a;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.eye-button:focus {
+    outline: none;
+}
+
+.eye-button:hover {
+    color: #7a99f4;
+}
+
+.icon {
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+.display-text {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}

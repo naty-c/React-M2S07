@@ -1,0 +1,71 @@
+.container-one {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #f4f47a;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.container-one h2 {
+    color: #556bab;
+    margin: 1rem auto;
+}
+.container-one h3 {
+    color: #f47a7a;
+}
+
+.btn-counter {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    color: #f4f47a;
+    background-color: #f47a7a;
+    position: relative;
+    cursor: pointer;
+}
+
+.btn-counter::before,
+.btn-counter::after {
+    content: "";
+    position: absolute;
+    display: block;
+}
+
+.btn-counter::before {
+    height: 90%;
+    width: 0;
+    right: 0;
+    top: 0;
+    border-radius: 5px;
+    border-top: 2px solid #f47a7a;
+    border-bottom: 2px solid #f47a7a;
+    transition: all 500ms cubic-bezier(0.075, 0.81, 0.165, 1);
+}
+
+.btn-counter::after {
+    height: 100%;
+    width: 0;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: all 1s cubic-bezier(0.075, 0.81, 0.165, 1);
+}
+
+.btn-counter:hover:before {
+    width: 100%;
+}
+
+.btn-counter:hover:after {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+span {
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    color: #f47a7a;
+}
